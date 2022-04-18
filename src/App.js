@@ -22,9 +22,18 @@ function App() {
       {characters &&
         characters.map((result) => {
           return (
-            <div>
-              <div>
-                {result.name} {result.house && "- " + result.house}
+            <div className="characters">
+              <div className="spacer">
+                <div className="fw-bold">Name: </div>
+                <div>{result.name}</div>
+              </div>
+              <div className="spacer">
+                <div>House: </div>
+                <div>{result.house}</div>
+              </div>
+              <div className="spacer">
+                <div>Gender: </div>
+                <div>{result.gender}</div>
               </div>
             </div>
           );
